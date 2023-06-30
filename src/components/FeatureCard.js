@@ -9,8 +9,10 @@ const FeatureCard = ({ img, title, desc }) => {
       <div className="flex flex-col justify-between">
         <img className="float-left w-12 h-12 cursor-pointer" src={img} alt="" />
         <div>
-          <h4 className="mt-9 text-FeatureCard-h4 w-full">{title}</h4>
-          <p className="mt-2.5 text-FeatureCard-p">{desc}</p>
+          <h4 className="mt-9 text-FeatureCard-h4 featureCard-h4 w-full">
+            {title}
+          </h4>
+          <p className="mt-2.5 text-FeatureCard-p featureCard-p">{desc}</p>
         </div>
       </div>
     </div>

@@ -34,16 +34,16 @@ const Header = () => {
       <div className="container max-w-6xl mx-auto pb-10 px-4 flex header">
         <div className="w-1/2">
           <img
-            className="min-w-full h-[542px] relative top-[185px] left-6"
+            className="min-w-full h-[542px] header-img relative top-[185px] left-6"
             src="/img/aboutus-banner.png"
             alt="Tomya"
           />
         </div>
         <div className="flex z-10 flex-col justify-end items-end w-1/2 pb-2 text-white">
-          <h1 className="text-header-h1">
+          <h1 className="text-header-h1 header-h1">
             TOMYA; kripto para almanın hızlı ve kolay yoludur.
           </h1>
-          <h4 className="text-header-h4 pt-5">
+          <h4 className="text-header-h4 header-h4 pt-5">
             Yenilikçi, dürüst ve profesyonel bakış açısı ile hareket eden TOMYA,
             kullanıcılara dijital para borsalarında güvenli ve şeffaf şekilde
             hizmet etmeyi vizyon edinmiştir.

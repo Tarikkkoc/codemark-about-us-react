@@ -4,9 +4,11 @@ const Collaborations = () => {
   return (
     <div className="flex flex-col">
       <div className="text-center">
-        <h2 className="mt-[150px] text-TomyaInfo-h2">İş Birliklerimiz</h2>
+        <h2 className="mt-[150px] text-TomyaInfo-h2 tomyaInfo-h2">
+          İş Birliklerimiz
+        </h2>
       </div>
-      <div className="mt-16 "></div>
+      <div className="mt-16"></div>
       <div className="flex p-[30px] rounded-[10px]">
         <div className="w-1/2 px-[15px] grid place-items-center">
           <img className="h-48 w-[40%]" src="/img/BCTR-logo.png" alt="" />

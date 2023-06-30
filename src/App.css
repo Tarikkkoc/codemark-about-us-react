@@ -38,6 +38,15 @@
     background-color: #eeeff6;
   }
 
+  .message::before {
+    content: "\1F7AE"; /* Ok sembolü veya başka bir sembol kullanabilirsiniz */
+    cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: -9px;
+      transform: translateY(-50%);
+      font-size: 20px;
+  }
   .create-account-btn {
     color: #ffff;
     background-color: #5952e4;
@@ -186,5 +195,66 @@
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
   }
+
+  .service-mission {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .header-h1 {
+    font-size: 32px;
+  }
+
+  .header-h4 {
+    font-size: 16px;
+  }
+
+  .tomyaInfo-h2 {
+    font-size: 24px;
+  }
+
+  .tomyaInfo-h4 {
+    font-size: 16px;
+  }
+
+  .featureCard-h4 {
+    font-size: 16px;
+  }
+
+  .featureCard-p {
+    font-size: 14px;
+  }
+
+  .socialMedia-h3 {
+    font-size: 20px;
+  }
+
+  .header-img {
+    height: 50%;
+    position: relative;
+    top: 50px;
+  }
+
+  .featureCard-box {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .socialMedia-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .create-account-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .width-full {
+    width: 100%;
+  }
+  
 }

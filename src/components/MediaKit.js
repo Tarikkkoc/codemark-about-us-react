@@ -4,10 +4,10 @@ const MediaKit = () => {
   return (
     <div className="flex- flex-col pt-[100px] pb-[120px] px-[150px]">
       <div className="flex gap-4 justify-center">
-        <div className="w-[30%] px-[15px] text-TomyaInfo-h2">
+        <div className="w-[30%] px-[15px] text-TomyaInfo-h2 tomyaInfo-h2">
           <h2>Basın Kiti</h2>
         </div>
-        <div className="w-[70%] text-SocialMedia-h3">
+        <div className="w-[70%] text-SocialMedia-h3 socialMedia-h3">
           <h3>
             Markamıza ait logomuzun medya kanallarında ya da farklı mecralarda
             en doğru şekilde kullanımı için basın materyallerini

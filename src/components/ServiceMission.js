@@ -2,7 +2,7 @@ import React from "react";
 
 const ServiceMission = () => {
   return (
-    <div className="flex pt-10">
+    <div className="flex pt-10 service-mission">
       <div className="w-1/2 flex justify-end items-end">
         <img
           className="min-w-full h-[384px] relative top-[28px] left-16 "
@@ -12,7 +12,7 @@ const ServiceMission = () => {
       </div>
       <div className="w-1/2 flex flex-col justify-center items-center px-3.5">
         <ul className="flex flex-col list-disc">
-          <h2 className="text-TomyaInfo-h2">Hizmet Misyonumuz</h2>
+          <h2 className="text-TomyaInfo-h2 tomyaInfo-h2">Hizmet Misyonumuz</h2>
           <li className="text-TomyaInfo-h4 mt-3.5 pl-5">
             Güçlü takım ve işbirliği ile tam hizmet
           </li>

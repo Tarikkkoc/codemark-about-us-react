@@ -9,6 +9,8 @@ import Navbar from "./Navbar";
 import ServiceMission from "./ServiceMission";
 import SocialMedia from "./SocialMedia";
 import TomyaInfo from "./TomyaInfo";
+import Message from "./Message";
+import WelcomeBox from "./WelcomeBox";
 
 function App() {
   const CardItems = [
@@ -35,33 +37,13 @@ function App() {
   ];
   return (
     <div className="App">
-      {/* <div className="sticky top-0 z-20 ">
-        <Navbar />
-      </div>   */}
       <div className="">
         <Header />
         <TomyaInfo />
-        <div className="flex gap-4 container max-w-6xl mx-auto">
-          <FeatureCard
-            img={CardItems[0].img}
-            title={CardItems[0].title}
-            desc={CardItems[0].desc}
-          />
-          <FeatureCard
-            img={CardItems[1].img}
-            title={CardItems[1].title}
-            desc={CardItems[1].desc}
-          />
-          <FeatureCard
-            img={CardItems[2].img}
-            title={CardItems[2].title}
-            desc={CardItems[2].desc}
-          />
-          <FeatureCard
-            img={CardItems[3].img}
-            title={CardItems[3].title}
-            desc={CardItems[3].desc}
-          />
+        <div className="flex gap-4 container max-w-6xl mx-auto featureCard-box">
+          {CardItems.map((item) => (
+            <FeatureCard img={item.img} title={item.title} desc={item.desc} />
+          ))}
         </div>
         <div className="container max-w-6xl mx-auto">
           <ServiceMission />
@@ -80,6 +62,10 @@ function App() {
         </div>
         <div className="footer">
           <Footer />
+        </div>
+        <div className="flex">
+          <Message />
+          <WelcomeBox />
         </div>
       </div>
     </div>
