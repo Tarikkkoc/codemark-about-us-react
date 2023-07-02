@@ -49,11 +49,8 @@ const Message = () => {
       />
       {showBox && (
         <div
+          className="fixed bottom-24 right-5 p-2.5 overflow-y-auto"
           style={{
-            position: "fixed",
-            bottom: "90px",
-            right: "20px",
-            padding: "10px",
             background: "#f9f9f9",
             border: "1px solid #ddd",
             borderRadius: "4px",
@@ -90,15 +87,13 @@ const Message = () => {
               onChange={handlePhoneChange}
             />
             <br />
-            <textarea
-              placeholder="İletinizi yazın Gönder butonuna basın."
-              name="message"
-              id="message"
-              className="bg-message"
-              cols="30"
-              rows="50"
-            ></textarea>
-            <button type="submit">Send</button>
+
+            <button
+              className="bg-secondary-gray rounded-xl hover:bg-slate-300 px-auto py-2.5"
+              type="submit"
+            >
+              Send
+            </button>
           </form>
         </div>
       )}

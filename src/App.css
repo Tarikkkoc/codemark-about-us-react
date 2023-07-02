@@ -278,12 +278,11 @@
   .mediaKit {
     display: flex;
     flex-direction: column;
+    /* justify-content: start;
+    align-items: start; */
   }
 
-  .mediaKit2 {
-    display: flex;
-    flex-direction: column;
-  }
+ 
 
   .mediaBox1 {
     display: flex;
