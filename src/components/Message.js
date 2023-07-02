@@ -33,7 +33,7 @@ const Message = () => {
   return (
     <div>
       <img
-        src="/img/message-icon.png"
+        src="/img/message.svg"
         alt="Message Icon"
         onClick={toggleBox}
         style={{

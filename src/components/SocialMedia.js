@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const SocialMedia = () => {
   return (
-    <div className="flex gap-7 mt-36 justify-center mobile:flex-col mobile:items-center tablet:flex-col tablet:items-center">
+    <div className="flex gap-7 mt-36 justify-center mobile:flex-col mobile:justify-center mobile:items-center tablet:items-center tablet:flex-col tablet:items-center">
       <div>
         <h2 className="text-TomyaInfo-h2 tomyaInfo-h2">
           TOMYA'yı Sosyal Medyada Takip Edin
@@ -21,7 +21,7 @@ const SocialMedia = () => {
       </div>
       <div className="shrink-0">
         <img
-          className="max-w-[455px]"
+          className="max-w-[455px] mobile:max-w-[300px]"
           src="/img/img_twitter_social.png"
           alt=""
         />

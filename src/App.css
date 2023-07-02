@@ -210,7 +210,7 @@
   .navbar {
     display: flex;
     justify-content: flex-start;
-    gap: 150px;
+    gap: px;
   }
 
   .navbar-ul{

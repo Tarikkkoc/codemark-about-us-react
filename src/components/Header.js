@@ -40,7 +40,7 @@ const Header = () => {
     <div className="bg-primary w-full pt-10 pb-5">
       <div className="w-full h-14 flex justify-center fixed top-0 z-20 ">
         <div className="container max-w-6xl mx-auto px-4 flex justify-between items-center bg-color-custom-nav rounded-b-[10px] navbar">
-          <img className="h-12 shrink-0" src="/img/tomya-logo.svg" alt="" />
+          <img className="h-10 shrink-1" src="/img/tomya-logo.svg" alt="" />
           <nav className="grow flex justify-end">
             <ul className="flex gap-6 navbar-ul items-center pt-[22px] pb-[32px] navbar-font text-white tablet:hidden mobile:hidden">
               <li
@@ -112,7 +112,7 @@ const Header = () => {
             <>
               <div
                 onMouseLeave={outCrypto}
-                className="fixed bg-black/40 z-10 left-[520px] top-16 "
+                className="fixed bg-black/40 z-10 left-[35%] top-16 "
               >
                 <div className="bg-secondary-gray">
                   <h2 className="text-crypto-item">Kripto Paralar</h2>
