@@ -10,42 +10,25 @@ import ServiceMission from "./ServiceMission";
 import SocialMedia from "./SocialMedia";
 import TomyaInfo from "./TomyaInfo";
 import Message from "./Message";
-import WelcomeBox from "./WelcomeBox";
 import Content from "./Content";
 
 function App() {
-  const CardItems = [
-    {
-      img: "/img/ic-selfie.svg",
-      title: "Multi Platform ve Akıllı Arayüz",
-      desc: "Kullanıcı dostu platformumuz ve arayüzlerimiz, her seviyedeki üyemizin tüm işlemlerini en kolay ve en hızlı şekilde yapabilmesi için tasarlandı.",
-    },
-    {
-      img: "/img/ic-privacy.svg",
-      title: "İki Faktörlü Doğrulama",
-      desc: "TOMYA'da iki faktörlü güvenlik doğrulama sistemi uygulanır; kişisel bilgilerinizin ve yatırımlarınızın güvenliği en üst seviyede tutulur.",
-    },
-    {
-      img: "/img/ic-sellbuy.svg",
-      title: "Hızlı Alım/Satım",
-      desc: "Tomya’nin pratik arayüzü ve gelişmiş mobil özellikleriyle işlemlerinizi dilediğiniz yerden takip etmek çok kolay!",
-    },
-    {
-      img: "/img/ic-support.svg",
-      title: "7/24 Yatırım İşlemleri",
-      desc: "Anlaşmalı olduğumuz bankalar üzerinden para gönderme işlemlerinizi 7/24 gerçekleştirebilirsiniz.",
-    },
-  ];
   return (
     <div className="App">
       <Header />
       <TomyaInfo />
-      <Content>
-        <FeatureCard />
-      </Content>
-      <Content>
-        <ServiceMission />
-      </Content>
+      <div className="-mb-32">
+        <Content>
+          <FeatureCard />
+        </Content>
+      </div>
+      <div className="bg-secondary-gray h-[300px] w-full" />
+
+      <div className="bg-secondary-gray">
+        <Content>
+          <ServiceMission />
+        </Content>
+      </div>
       <Content>
         <Collaborations />
       </Content>

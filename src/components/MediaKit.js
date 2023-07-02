@@ -2,9 +2,9 @@ import React from "react";
 
 const MediaKit = () => {
   return (
-    <div className="flex flex-col pt-[100px] pb-[120px]">
-      <div className="flex mediaKit gap-4 justify-center">
-        <div className="px-[15px] text-TomyaInfo-h2 tomyaInfo-h2">
+    <div className="flex flex-col  items-center pt-[100px] pb-[120px] bg-slate-200">
+      <div className="flex mediaKit px-[100px] gap-4 justify-center">
+        <div className=" text-TomyaInfo-h2 tomyaInfo-h2">
           <h2>Basın Kiti</h2>
         </div>
         <div className="text-SocialMedia-h3 socialMedia-h3">
@@ -16,11 +16,11 @@ const MediaKit = () => {
         </div>
       </div>
       <div className="flex mediaKit2 gap-2 mt-20 justify-center items-end">
-        <div className=" mediaBox1 h-[270px] py-[32px] px-[38px] flex items-end bg-blue-300">
+        <div className=" mediaBox1 h-[270px] py-[32px] px-[38px] flex items-end bg-white">
           <span className="text-MediaKit-h6">Logo kullanım kılavuzu</span>
         </div>
-        <div className="h-[270px] py-[32px] px-[38px] mediaBox2 flex justfiy-between items-end bg-slate-100">
-          <span className="text-MediaKit-h6 mr-[30px]">
+        <div className="h-[270px] py-[32px] px-[38px] mediaBox2 flex justfiy-between items-end bg-white">
+          <span className="text-MediaKit-h6 mr-[30px] flex justify-end">
             Renkli ve Siyah/Beyaz kullanım
           </span>
           <span className="text-MediaKit-h6 logoBaski">

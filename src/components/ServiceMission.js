@@ -2,7 +2,7 @@ import React from "react";
 
 const ServiceMission = () => {
   return (
-    <div className="flex justify-center pt-10 service-mission gap-4">
+    <div className="flex justify-center pt-10 service-mission gap-4 bg-secondary-gray">
       <div className="flex justify-center">
         <img className="w-full max-w-xs " src="/img/aboutus-coins.png" alt="" />
       </div>
