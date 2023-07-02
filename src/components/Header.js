@@ -136,9 +136,9 @@ const Header = () => {
       </div>
       <section className="w-full relative">
         <div className="container max-w-6xl mx-auto flex gap-4 header reverse content">
-          <div className="max-w-[500px] -mb-20">
+          <div className="max-w-[500px] w-full  -mb-20">
             <img
-              className="min-w-full header-img"
+              className="max-w-[500px] w-full"
               src="/img/aboutus-banner.png"
               alt="Tomya"
             />

@@ -49,7 +49,7 @@ const Message = () => {
       />
       {showBox && (
         <div
-          className="fixed bottom-24 right-5 p-2.5 overflow-y-auto"
+          className="fixed rounded-xl bottom-24 right-5 p-2.5 overflow-y-auto"
           style={{
             background: "#f9f9f9",
             border: "1px solid #ddd",

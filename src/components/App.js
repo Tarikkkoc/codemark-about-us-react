@@ -21,7 +21,7 @@ function App() {
           <FeatureCard />
         </Content>
       </div>
-      <div className="bg-secondary-gray h-[300px] w-full" />
+      <div className="bg-secondary-gray h-[200px] w-full" />
 
       <div className="bg-secondary-gray">
         <Content>
