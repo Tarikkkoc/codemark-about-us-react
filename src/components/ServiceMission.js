@@ -2,15 +2,11 @@ import React from "react";
 
 const ServiceMission = () => {
   return (
-    <div className="flex pt-10 service-mission">
-      <div className="w-1/2 flex justify-end items-end">
-        <img
-          className="min-w-full h-[384px] relative top-[28px] left-16 "
-          src="/img/aboutus-coins.png"
-          alt=""
-        />
+    <div className="flex justify-center pt-10 service-mission gap-4">
+      <div className="flex justify-center">
+        <img className="w-full max-w-xs " src="/img/aboutus-coins.png" alt="" />
       </div>
-      <div className="w-1/2 flex flex-col justify-center items-center px-3.5">
+      <div className="flex flex-col justify-center items-center px-3.5">
         <ul className="flex flex-col list-disc">
           <h2 className="text-TomyaInfo-h2 tomyaInfo-h2">Hizmet Misyonumuz</h2>
           <li className="text-TomyaInfo-h4 mt-3.5 pl-5">

@@ -1,3 +1,7 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 @font-face {
   font-family: 'Graphik Regular';
   src: url("../public/fonts/GraphikRegular.otf") format('truetype');
@@ -17,7 +21,6 @@
 }
 
 .bg-color-hr {
-  
   border-top-color: #a7a8ae90;
 }
 
@@ -27,12 +30,44 @@
   /* height: 500px; */
 }
 
-.crypto-item:before {
-    content: "\2304";
-    width:1px;
-    float: right;
+.navbar-ul li{
+  @apply relative;
+}
+
+.navbar-ul li:first-child:before {
+    @apply absolute -right-2 -top-1 w-1 content-["\2304"];
+}
+
+.drawer-menu {
+  font-family: "Graphik Medium", sans-serif;
+    font-size: 25px;
+    color: #24242a;
+}
+
+
+  .drawer-menu {
+    opacity: 0;
+    transform: scale(0.2);
+    animation: menu-open 0.2s forwards;
   }
 
+  @keyframes menu-open {
+    0% {
+      opacity: 0;
+      transform: scale(0.2);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+
+/* Active state */
+#toggleButton.active + #drawerMenu,
+#drawerMenu.active {
+  display: block;
+}
   .create-account {
     border-radius: 10px;
     background-color: #eeeff6;
@@ -156,6 +191,15 @@
   transition: background-color 0.3s ease; 
 }
 
+.box {
+  @apply rounded-xl p-7;
+  box-shadow: 0 15px 60px 0 rgba(50,46,127,.17);
+}
+
+.content {
+  @apply mobile:px-5 tablet:px-7 desktop:px-10;
+}
+
 /* max width 1250px */
 
 @media (max-width: 1250px) {
@@ -175,7 +219,10 @@
 @media (max-width: 990px) {
   .navbar {
     justify-content: space-between;
+    max-width: 90%;
   }
+
+  
 
   .navbar-ul{
     display: none;
@@ -185,6 +232,7 @@
     display: flex;
     justify-content: space-between;
     background-color: #5952e4;
+    
   }
 
   .button {
@@ -196,11 +244,83 @@
     justify-content: center;
     align-items: center;
     padding-top: 50px;
+    width: 100%;
+  }
+
+  .footer-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    .footer-mobile2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 20px;
+      margin-right: 20px;
+      }
+
+  .footer-adress{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 30px;
+  }
+
+  .mediaKit {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mediaKit2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mediaBox1 {
+    display: flex;
+    align-items: start;
+    width: 100%;
+  }
+
+  .mediaBox2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .mediaBoxBtn {
+    margin: 0;
+    width: 140px;
+  }
+
+  .footer1 {
+    display: none;
+  }
+
+  .footer2 {
+    display: flex;
+  }
+
+  .logoBaski {
+    display: none;
+  }
+
+  .reverse{
+    @apply flex flex-col-reverse justify-center;
   }
 
   .service-mission {
     flex-direction: column-reverse;
     justify-content: center;
+    
   }
 
   .header-h1 {
@@ -236,18 +356,7 @@
     position: relative;
     top: 50px;
   }
-
-  .featureCard-box {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .socialMedia-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
+  
   .create-account-mobile {
     display: flex;
     flex-direction: column;

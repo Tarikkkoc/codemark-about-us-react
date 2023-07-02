@@ -11,6 +11,7 @@ import SocialMedia from "./SocialMedia";
 import TomyaInfo from "./TomyaInfo";
 import Message from "./Message";
 import WelcomeBox from "./WelcomeBox";
+import Content from "./Content";
 
 function App() {
   const CardItems = [
@@ -37,36 +38,31 @@ function App() {
   ];
   return (
     <div className="App">
-      <div className="">
-        <Header />
-        <TomyaInfo />
-        <div className="flex gap-4 container max-w-6xl mx-auto featureCard-box">
-          {CardItems.map((item) => (
-            <FeatureCard img={item.img} title={item.title} desc={item.desc} />
-          ))}
-        </div>
-        <div className="container max-w-6xl mx-auto">
-          <ServiceMission />
-        </div>
-        <div className="container max-w-6xl mx-auto">
-          <Collaborations />
-        </div>
-        <div className="container max-w-6xl mx-auto">
-          <SocialMedia />
-        </div>
-        <div className="container max-w-6xl mx-auto">
-          <MediaKit />
-        </div>
-        <div className="container max-w-6xl mx-auto">
-          <CreateAccount />
-        </div>
-        <div className="footer">
-          <Footer />
-        </div>
-        <div className="flex">
-          <Message />
-          <WelcomeBox />
-        </div>
+      <Header />
+      <TomyaInfo />
+      <Content>
+        <FeatureCard />
+      </Content>
+      <Content>
+        <ServiceMission />
+      </Content>
+      <Content>
+        <Collaborations />
+      </Content>
+      <Content>
+        <SocialMedia />
+      </Content>
+      <Content>
+        <MediaKit />
+      </Content>
+      <Content>
+        <CreateAccount />
+      </Content>
+      <div className="footer">
+        <Footer />
+      </div>
+      <div className="flex">
+        <Message />
       </div>
     </div>
   );

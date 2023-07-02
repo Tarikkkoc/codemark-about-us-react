@@ -3,7 +3,8 @@ import React, { useState } from "react";
 const Message = () => {
   const [showBox, setShowBox] = useState(false);
   const [name, setName] = useState("");
-  const [surname, setSurname] = useState("");
+  const [mail, setMail] = useState("");
+  const [phone, setPhone] = useState("");
 
   const toggleBox = () => {
     setShowBox(!showBox);
@@ -13,14 +14,19 @@ const Message = () => {
     setName(event.target.value);
   };
 
-  const handleSurnameChange = (event) => {
-    setSurname(event.target.value);
+  const handleMailChange = (event) => {
+    setMail(event.target.value);
+  };
+
+  const handlePhoneChange = (event) => {
+    setPhone(event.target.value);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log("Name:", name);
-    console.log("Surname:", surname);
+    console.log("Mail:", mail);
+    console.log("Phone Number:", phone);
     // Burada verileri göndermek veya başka bir işlem yapmak için kodlarınızı ekleyebilirsiniz.
   };
 
@@ -37,6 +43,8 @@ const Message = () => {
           width: "50px",
           height: "50px",
           cursor: "pointer",
+          // Add maximum height for scrollable content
+          overflowY: "auto", // Enable vertical scrolling
         }}
       />
       {showBox && (
@@ -51,23 +59,45 @@ const Message = () => {
             borderRadius: "4px",
           }}
         >
-          <form onSubmit={handleSubmit}>
-            <label htmlFor="name">Name:</label>
+          <form
+            className="h-60 flex flex-col justify-between"
+            onSubmit={handleSubmit}
+          >
             <input
+              placeholder="İsminizi giriniz. (Zorunlu)"
               type="text"
               id="name"
+              className="bg-message border-solid border-2 border-l-neutral-500 rounded-xl px-2 py-2"
               value={name}
               onChange={handleNameChange}
             />
             <br />
-            <label htmlFor="surname">Surname:</label>
             <input
+              placeholder="E-mail adresinizi giriniz. (Zorunlu)"
               type="text"
-              id="surname"
-              value={surname}
-              onChange={handleSurnameChange}
+              id="mail"
+              className="bg-message border-solid border-2 border-l-neutral-500 rounded-xl px-2 py-2"
+              value={mail}
+              onChange={handleMailChange}
             />
             <br />
+            <input
+              placeholder="Telefon numaranızı giriniz.(0****) (Zorunlu)"
+              type="text"
+              id="number"
+              className="bg-message border-solid border-2 border-l-neutral-500 rounded-xl px-2 py-2"
+              value={phone}
+              onChange={handlePhoneChange}
+            />
+            <br />
+            <textarea
+              placeholder="İletinizi yazın Gönder butonuna basın."
+              name="message"
+              id="message"
+              className="bg-message"
+              cols="30"
+              rows="50"
+            ></textarea>
             <button type="submit">Send</button>
           </form>
         </div>
