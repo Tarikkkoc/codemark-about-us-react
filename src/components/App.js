@@ -5,7 +5,6 @@ import FeatureCard from "./FeatureCard";
 import Footer from "./Footer";
 import Header from "./Header";
 import MediaKit from "./MediaKit";
-import Navbar from "./Navbar";
 import ServiceMission from "./ServiceMission";
 import SocialMedia from "./SocialMedia";
 import TomyaInfo from "./TomyaInfo";

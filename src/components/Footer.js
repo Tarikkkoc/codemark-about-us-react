@@ -1,6 +1,6 @@
 import React from "react";
 import { Disclosure } from "@headlessui/react";
-import { ChevronUpIcon } from "@heroicons/react/20/solid";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 const Footer = () => {
   return (
@@ -125,7 +125,7 @@ const Footer = () => {
             <>
               <Disclosure.Button className="flex w-full justify-between text-footer-h6 px-4 py-2">
                 <span>Kurumsal</span>
-                <ChevronUpIcon
+                <ChevronDownIcon
                   className={`${
                     open ? "rotate-180 transform" : ""
                   } h-5 w-5 text-purple-500`}
@@ -151,7 +151,7 @@ const Footer = () => {
             <>
               <Disclosure.Button className="flex w-full justify-between text-footer-h6 px-4 py-2">
                 <span>Kullanıcılar için</span>
-                <ChevronUpIcon
+                <ChevronDownIcon
                   className={`${
                     open ? "rotate-180 transform" : ""
                   } h-5 w-5 text-purple-500`}
@@ -183,7 +183,7 @@ const Footer = () => {
             <>
               <Disclosure.Button className="flex w-full justify-between text-footer-h6 px-4 py-2">
                 <span>Kripto paralar</span>
-                <ChevronUpIcon
+                <ChevronDownIcon
                   className={`${
                     open ? "rotate-180 transform" : ""
                   } h-5 w-5 text-purple-500`}
@@ -234,7 +234,7 @@ const Footer = () => {
             <>
               <Disclosure.Button className="flex w-full justify-between text-footer-h6 px-4 py-2">
                 <span>Rehber</span>
-                <ChevronUpIcon
+                <ChevronDownIcon
                   className={`${
                     open ? "rotate-180 transform" : ""
                   } h-5 w-5 text-purple-500`}
