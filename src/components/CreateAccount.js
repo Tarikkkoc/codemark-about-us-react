@@ -12,7 +12,7 @@ const CreateAccount = () => {
         borsalarındaki alım satım deneyiminizi en üst noktaya çıkarabilirsiniz.
       </h4>
       <div className="shrink-0">
-        <button className="py-[12px] h-[45px] px-[16px] create-account-btn ">
+        <button className="py-[12px] h-[45px] px-[16px] create-account-btn hover:bg-blue-500">
           Hesap Oluştur
         </button>
       </div>
