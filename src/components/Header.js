@@ -2,7 +2,6 @@ import React, { Fragment, useState } from "react";
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const [isCryoptoOpen, setIsCryoptoOpen] = useState(false);
 
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
@@ -10,14 +9,6 @@ const Header = () => {
 
   const closeDrawer = () => {
     setIsDrawerOpen(false);
-  };
-
-  const hoverCrypto = () => {
-    setIsCryoptoOpen(!isCryoptoOpen);
-  };
-
-  const outCrypto = () => {
-    setIsCryoptoOpen(isCryoptoOpen);
   };
 
   const cryptoItem = [
@@ -44,28 +35,40 @@ const Header = () => {
           <nav className="grow flex justify-end">
             <ul className="flex gap-6 navbar-ul items-center pt-[22px] pb-[32px] navbar-font text-white tablet:hidden mobile:hidden">
               <li
-                onMouseEnter={hoverCrypto}
-                className="transition-opacity hover:opacity-50"
+              // onMouseEnter={hoverCrypto}
               >
                 Kripto Paralar
+                <div className="box">
+                  <h2 className="text-crypto-item pt-5 px-7 pb-3">
+                    Kripto Paralar
+                  </h2>
+                  <hr />
+                  <ul>
+                    {cryptoItem.map((item) => (
+                      <li className="flex py-2.5 px-2 gap-2 rounded-xl items-center">
+                        <img
+                          className="w-8 h-8 cursor-pointer"
+                          src={item.img}
+                        />
+                        <span className="cursor-pointer">{item.title}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </li>
-              <li className="transition-opacity hover:opacity-50">Market</li>
-              <li className="transition-opacity hover:opacity-50">
-                Komisyonlar
+              <li>Market</li>
+              <li>Komisyonlar</li>
+              <li>Hakkımızda</li>
+              <li>Basında Biz</li>
+              <li>Duyurular</li>
+              <li>İletişim</li>
+              <li>Blog</li>
+              <li>
+                <span className="border-solid border rounded-xl border-white p-2">
+                  Giriş Yap
+                </span>
               </li>
-              <li className="transition-opacity hover:opacity-50">
-                Hakkımızda
-              </li>
-              <li className="transition-opacity hover:opacity-50">
-                Basında Biz
-              </li>
-              <li className="transition-opacity hover:opacity-50">Duyurular</li>
-              <li className="transition-opacity hover:opacity-50">İletişim</li>
-              <li className="transition-opacity hover:opacity-50">Blog</li>
-              <li className="border-solid border-2 rounded-xl border-white px-2">
-                Giriş Yap
-              </li>
-              <li className="transition-opacity hover:opacity-50">Kayıt Ol</li>
+              <li>Kayıt Ol</li>
             </ul>
             <div className="tablet:flex tablet:justify-between mobile:flex mobile:justify-between tablet:bg-primary hidden">
               <img src="/img/ic-user.svg" alt="" />
@@ -104,30 +107,6 @@ const Header = () => {
                   <button className="bg-primary rounded-full px-6 py-3 text-header-h4 text-secondary-gray">
                     Giriş Yap
                   </button>
-                </div>
-              </div>
-            </>
-          )}
-          {isCryoptoOpen && (
-            <>
-              <div
-                onMouseLeave={outCrypto}
-                className="fixed bg-black/40 z-10 left-[35%] top-16 "
-              >
-                <div className="bg-secondary-gray">
-                  <h2 className="text-crypto-item">Kripto Paralar</h2>
-                  <hr />
-                  <div className="grid grid-cols-4 gap-4 pt-4">
-                    {cryptoItem.map((item) => (
-                      <div className="flex gap-2">
-                        <img
-                          className="w-8 h-8 cursor-pointer"
-                          src={item.img}
-                        />
-                        <span className="cursor-pointer">{item.title}</span>
-                      </div>
-                    ))}
-                  </div>
                 </div>
               </div>
             </>

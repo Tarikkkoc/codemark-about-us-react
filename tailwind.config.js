@@ -33,6 +33,7 @@ module.exports = {
         primary: "#5952e4",
         secondary: {
           gray: "#eeeff6",
+          dark: "#24242a",
         },
         message: "#f4f4f4",
       },

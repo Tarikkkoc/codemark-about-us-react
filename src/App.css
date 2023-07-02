@@ -30,9 +30,6 @@
   /* height: 500px; */
 }
 
-.navbar-ul li{
-  @apply relative;
-}
 
 .navbar-ul li:first-child:before {
     @apply absolute -right-2 -top-1 w-1 content-["\2304"];
@@ -204,7 +201,35 @@
   @apply mobile:px-5 tablet:px-7 desktop:px-10;
 }
 
+ul.navbar-ul li div {
+  @apply hidden rounded-xl absolute w-full top-[70px] left-0 right-0 bg-white;
+}
+
+ul.navbar-ul li>div>ul {
+  @apply text-secondary-dark grid grid-cols-4 gap-4 p-6;
+}
+ul.navbar-ul li>div>ul li{
+  @apply transition-colors duration-300 ease-in-out hover:bg-secondary-gray hover:cursor-pointer;
+
+}
+ul.navbar-ul li:hover div {
+  @apply block ;
+}
+
+ul.navbar-ul {
+  @apply relative;
+}
+
+ul.navbar-ul li {
+  @apply hover:cursor-pointer py-4;
+}
+
+ul.navbar-ul>li :not(div) {
+  @apply hover:bg-gray-50;
+}
+
 /* max width 1250px */
+
 
 @media (max-width: 1250px) {
   .navbar {
