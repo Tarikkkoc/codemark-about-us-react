@@ -56,19 +56,25 @@ const Header = () => {
                   </ul>
                 </div>
               </li>
-              <li>Market</li>
-              <li>Komisyonlar</li>
-              <li>Hakkımızda</li>
-              <li>Basında Biz</li>
-              <li>Duyurular</li>
-              <li>İletişim</li>
-              <li>Blog</li>
-              <li>
+              <li className="transition-opacity hover:opacity-50">Market</li>
+              <li className="transition-opacity hover:opacity-50">
+                Komisyonlar
+              </li>
+              <li className="transition-opacity hover:opacity-50">
+                Hakkımızda
+              </li>
+              <li className="transition-opacity hover:opacity-50">
+                Basında Biz
+              </li>
+              <li className="transition-opacity hover:opacity-50">Duyurular</li>
+              <li className="transition-opacity hover:opacity-50">İletişim</li>
+              <li className="transition-opacity hover:opacity-50">Blog</li>
+              <li className="hover:text-primary">
                 <span className="border-solid border rounded-xl border-white p-2">
                   Giriş Yap
                 </span>
               </li>
-              <li>Kayıt Ol</li>
+              <li className="transition-opacity hover:opacity-50">Kayıt Ol</li>
             </ul>
             <div className="tablet:flex tablet:justify-between mobile:flex mobile:justify-between tablet:bg-primary hidden">
               <img src="/img/ic-user.svg" alt="" />
